@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "diffusers-transformers"
+version = "0.1.0"
+description = ""
+authors = ["kohei <koheitech001@gmail.com>"]
+license = "Apach-2.0"
+readme = "README.md"
+packages = [{include = "diffusers_transformers"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.11"
+diffusers = "^0.14.0"
+datasets = "^2.11.0"
+transformers = "^4.27.4"
+accelerate = "^0.18.0"
+ftfy = "^6.1.1"
+pyarrow = "9.0.0"
+torch = "^2.0.0"
+torchvision = "^0.15.1"
+torchaudio = "^2.0.1"
+matplotlib = "^3.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
